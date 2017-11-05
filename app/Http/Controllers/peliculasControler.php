@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 
 class peliculasControler extends Controller
 {
+     public function agregar() {
+           return view("agregarPelicula");
+         }
+
     function buscarPeliculaId($id){
          $peliculas=[
               1=>'Toy Story',
@@ -15,10 +19,10 @@ class peliculasControler extends Controller
               5=>'UP',
               6=>'Mary and Max'
          ];
-         //return 'La Pelicula elegida es: '.$peliculas[$id];
+        return 'La Pelicula elegida es: '.$peliculas[$id];
 
 
-         return view('peliculas', $peliculas[$id]);
+         //return view('peliculas', $peliculas[$id]);
          }
 
      /*function buscarPeliculaNombre($nombre){
@@ -52,4 +56,7 @@ class peliculasControler extends Controller
          return view("listadoPeliculas", $data);
 
     }
+
+
+
 }

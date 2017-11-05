@@ -17,8 +17,8 @@
                            <a class="navbar-brand" href="#">SeriesVero</a>
                       </div>
                       <ul class="nav navbar-nav">
-                             <li class="active"><a href="#">Home</a></li>
-                             <li><a href="#">Peliculas</a></li>
+                             <li class="active"><a href="/">Home</a></li>
+                             <li><a href="/listadopeliculas">Peliculas</a></li>
                              <li><a href="#">Series</a></li>
                              <li><a href="#">Actores</a></li>
                       </ul>

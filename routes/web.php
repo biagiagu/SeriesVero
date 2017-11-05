@@ -39,5 +39,6 @@ Route::get('resultado2/{numero}/{numero2?}', function($numero, $numero2=null){
 }
 });
 
-Route::get('/peliculas/{id}', 'peliculasControler@buscarPeliculaId');
+Route::get('/pelicula/{id}', 'peliculasControler@buscarPeliculaId');
 Route::get('/listadopeliculas', 'peliculasControler@listado');
+Route::post('/peliculas/agregar', 'peliculasControler@agregar');

@@ -15,7 +15,10 @@ class peliculasControler extends Controller
               5=>'UP',
               6=>'Mary and Max'
          ];
-         return 'La Pelicula elegida es: '.$peliculas[$id];
+         //return 'La Pelicula elegida es: '.$peliculas[$id];
+
+
+         return view('peliculas', $peliculas[$id]);
          }
 
      /*function buscarPeliculaNombre($nombre){
@@ -46,7 +49,7 @@ class peliculasControler extends Controller
          ];
          $data = compact("peliculas");
 
-         return view("Peliculas", $data);
+         return view("listadoPeliculas", $data);
 
     }
 }

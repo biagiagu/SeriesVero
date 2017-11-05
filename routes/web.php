@@ -40,4 +40,4 @@ Route::get('resultado2/{numero}/{numero2?}', function($numero, $numero2=null){
 });
 
 Route::get('/peliculas/{id}', 'peliculasControler@buscarPeliculaId');
-Route::get('/peliculas', 'peliculasControler@listado');
+Route::get('/listadopeliculas', 'peliculasControler@listado');

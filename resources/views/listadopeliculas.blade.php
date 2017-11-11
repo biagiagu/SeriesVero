@@ -6,8 +6,11 @@ Listado de Peliculas
 
 @section('contenido')
      <ul>
-          @foreach ($peliculas as $key => $titulo)
-                    <li><a href="/pelicula/{{$key}}">{{$titulo}}</a></li>
-          @endforeach
+          @forelse ($peliculas as $key => $titulo)
+               <li><a href="/pelicula/{{$key}}">{{$titulo}}</a></li>
+          @empty
+               <p>no hay peliculas</p>
+          @endforelse
      </ul>
+
 @endsection

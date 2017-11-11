@@ -7,10 +7,17 @@ use Illuminate\Http\Request;
 class peliculasControler extends Controller
 {
      public function agregar() {
-           return view("agregarPelicula");
+         if ($_POST){
+             echo"pelicula agregada con exito";
+             return dd($_POST);
+             //return view('nuevaPelicula')
+         }else{
+             return view("agregarPelicula");
          }
 
-    function buscarPeliculaId($id){
+     }
+
+    public function buscarPeliculaId($id){
          $peliculas=[
               1=>'Toy Story',
               2=>'Buscando a Nemo',
@@ -19,11 +26,12 @@ class peliculasControler extends Controller
               5=>'UP',
               6=>'Mary and Max'
          ];
-        return 'La Pelicula elegida es: '.$peliculas[$id];
+
+         //return 'La Pelicula elegida es: '.$peliculas[$id];
 
 
-         //return view('peliculas', $peliculas[$id]);
-         }
+         return view('pelicula')->with('pelicula', $peliculas[$id]);
+    }
 
      /*function buscarPeliculaNombre($nombre){
           $peliculas=[

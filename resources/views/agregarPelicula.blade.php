@@ -27,23 +27,24 @@
         <label>Fecha de Estreno</label>
         <select name="dia">
             <option value="">Dia</option>
-            <?php for ($i=1; $i < 32; $i++) { ?>
-               <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-            <?php } ?>
+            @for ($i=1; $i < 32; $i++)
+               <option value="{{$i}}">{{$i}}</option>
+            @endfor
         </select>
         <select name="mes">
             <option value="">Mes</option>
-            <?php for ($i=1; $i < 13; $i++) { ?>
-               <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-            <?php } ?>
+            @for ($i=1; $i < 13; $i++)
+               <option value="{{$i}}">{{$i}}</option>
+            @endfor
         </select>
         <select name="anio">
             <option value="">Anio</option>
-            <?php for ($i=1900; $i < 2017; $i++) { ?>
-               <option value="<?php echo $i; ?>"><?php echo $i; ?></option>
-            <?php } ?>
+            @for ($i=1900; $i < 2017; $i++)
+               <option value="{{$i}}">{{$i}}</option>
+            @endfor
         </select>
    </div>
    <input type="submit" value="Agregar Pelicula" name="submit"/>
+    <input type="reset" value="Borrar Formulario">
 </form>
 @endsection

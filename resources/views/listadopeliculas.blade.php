@@ -7,7 +7,7 @@ Listado de Peliculas
 @section('contenido')
      <ul>
           @foreach ($peliculas as $key => $titulo)
-                    <li><a href="#">{{$titulo}}</a></li>
+                    <li><a href="/pelicula/{{$key}}">{{$titulo}}</a></li>
           @endforeach
      </ul>
 @endsection

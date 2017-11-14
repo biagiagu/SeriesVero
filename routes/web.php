@@ -43,3 +43,4 @@ Route::get('/pelicula/{id}', 'peliculasControler@buscarPeliculaId');
 Route::get('/listadopeliculas', 'peliculasControler@listado');
 Route::get('/peliculas/agregar', 'peliculasControler@agregar');
 Route::post('/peliculas/agregar', 'peliculasControler@agregar');
+Route::get('/actores','actoresController@directory');

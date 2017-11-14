@@ -77,7 +77,7 @@
                                 <li class="active"><a href="/">Home</a></li>
                                 <li><a href="/listadopeliculas">Peliculas</a></li>
                                 <li><a href="#">Series</a></li>
-                                <li><a href="#">Actores</a></li>
+                                <li><a href="/actores">Actores</a></li>
                          </ul>
                   </div>
              </nav>
